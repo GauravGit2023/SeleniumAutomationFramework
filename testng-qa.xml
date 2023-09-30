@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="org.example.utils.ScreenShotListener"></listener>
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="SeleniumFrameworkFinal">
+        <groups>
+            <run>
+                <include name="QA"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.example.web.tests.LoginTest">
+            </class>
+        </classes>
+    </test>
+</suite>
